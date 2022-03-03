@@ -1,0 +1,105 @@
+.common-retake-rules {
+    margin-bottom: 120px;
+}
+
+.common-retake-rules .section-name {
+    margin-bottom: 11px;
+}
+
+.common-retake-rules__title {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    max-width: 720px;
+}
+
+.common-retake-rules__list {
+    width: 100%;
+    counter-reset: section;
+}
+
+.common-retake-rules__item {
+    position: relative;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+    border-bottom: 1px solid #CDCFD4;
+}
+
+.common-retake-rules__item::before {
+    position: absolute;
+    top: 20px;
+    left: -50%;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-blue-light);
+    counter-increment: section;
+    content: "0" counters(section, "")
+}
+
+.common-retake-rules__item:first-child {
+    border-top: 1px solid #CDCFD4;
+}
+
+.common-retake-rules__item-heading {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    grid-column: 4 span;
+    max-width: 350px;
+}
+
+.common-retake-rules__item-content {
+    grid-column: 4 span;
+}
+
+.common-retake-rules__item-content p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .common-retake-rules__item-heading,
+    .common-retake-rules__item-content {
+        grid-column: 8 span;
+        max-width: 100%;
+    }
+
+    .common-retake-rules__item-heading {
+        margin-bottom: 12px;
+        border-top: 1px solid #CDCFD4;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .common-retake-rules__title {
+        margin-bottom: 24px;
+    }
+
+    .common-retake-rules__item {
+        border-bottom: none;
+        padding-top: 0;
+    }
+
+    .common-retake-rules__item:first-child {
+        border-top: none;
+    }
+
+    .common-retake-rules__item::before {
+        position: static;
+        top: auto;
+        left: auto;
+        grid-column: 8 span;
+    }
+
+    .common-retake-rules {
+        margin-bottom: 60px;
+    }
+
+    .common-retake-rules .section-name {
+        margin-bottom: 8px;
+    }
+}

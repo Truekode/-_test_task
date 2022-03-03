@@ -1,0 +1,98 @@
+.qusetion-banner {
+    padding: 60px 0;
+    padding-bottom: 42px;
+    color: var(--color-white);
+    background: linear-gradient(90deg, #DE525C 0%, #E97251 100%);
+}
+
+.qusetion-banner__warn {
+    grid-column: 4 span;
+    max-width: 257px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.qusetion-banner__right-block {
+    grid-column: 8 span;
+}
+
+.qusetion-banner__heading {
+    max-width: 661px;
+    margin-bottom: 40px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    line-height: 59px;
+}
+
+.qusetion-banner__button {
+    width: auto;
+    padding: 25px 43px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+@media (max-width: 1366px) {
+    .qusetion-banner {
+        padding: 42px 0;
+    }
+
+    .qusetion-banner__heading {
+        max-width: 531px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .qusetion-banner__warn,
+    .qusetion-banner__right-block {
+        grid-column: 12 span;
+    }
+
+    .qusetion-banner__warn {
+        max-width: 358px;
+    }
+
+    .qusetion-banner__right-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .qusetion-banner__heading {
+        margin-bottom: 0;
+    }
+
+    .qusetion-banner__button {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .qusetion-banner {
+        padding: 48px 0;
+    }
+
+    .qusetion-banner .grid {
+        row-gap: 0;
+    }
+
+    .qusetion-banner__warn {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    .qusetion-banner__right-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .qusetion-banner__heading {
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+}

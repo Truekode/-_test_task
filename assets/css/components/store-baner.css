@@ -1,0 +1,63 @@
+.store-banner {
+    background: url("../../img/online-store/store-bg.jpg") no-repeat top center;
+    background-size: cover;
+    padding: 60px 0 47px 0;
+}
+
+.store-banner__title {
+    margin-top: 92px;
+    max-width: 582px;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.store-banner__text {
+    max-width: 582px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.store-banner__btn {
+    margin-top: 80px;
+    width: 282px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10BFEB;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+.store-banner__navigation {
+    margin-top: 75px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.store-banner__navigation .slider-arrow{
+    width: 32px;
+    height: 28px;
+    fill: #fff;
+}
+
+@media (max-width: 767px) {
+    .store-banner__text {
+        margin-bottom: 30px;
+    }
+
+    .store-banner__navigation {
+        justify-content: center;
+    }
+
+    .store-banner__btn {
+        margin: 0 auto;
+    }
+}

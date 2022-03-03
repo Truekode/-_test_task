@@ -1,0 +1,145 @@
+.recommend {
+  margin-bottom: 110px;
+}
+
+.course-page-recommend {
+  margin-bottom: 124px;
+}
+
+.course-page-recommend .recommend__section-name {
+  margin-bottom: 14px;
+}
+
+.course-page-recommend .recommend__title {
+  line-height: 59px;
+}
+
+.course-page-recommend .recommend__title_wrap {
+  margin-bottom: 60px;
+}
+
+.course-page-recommend .card {
+  padding: 23px 26px;
+}
+
+.recommend__title {
+  max-width: 736px;
+}
+
+.recommend__title_wrap {
+  margin-bottom: 57px;
+}
+
+.recommend__section-name {
+  margin-bottom: 10px;
+}
+
+.recommend__grid {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.recommend-slider-mobile {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .course-page-recommend .recommend__title {
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .recommend__title_wrap {
+    margin-bottom: 30px;
+  }
+
+  .recommend__box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .recommend-slider__nav {
+    width: 100px;
+  }
+
+  .recommend-slider__nav .slider-arrow {
+    width: 41px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .recommend__box {
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .recommend__col:nth-child(1) {
+    width: 100%;
+    margin-bottom: 24px;
+  } 
+
+  .recommend__col:nth-child(2) {
+    width: 100%;
+  }
+
+  .recommend-slider {
+    display: none;
+  }
+
+  .recommend-slider-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .recommend-slider-mobile .slick-list {
+    margin: -10px;
+  }
+
+  .recommend-slider-mobile .card {
+    display: flex !important;
+    flex-shrink: 0;
+    margin: 10px;
+  }
+
+  .course-page-recommend .recommend__title_wrap {
+    margin-bottom: 40px;
+  }
+
+  .course-page-recommend {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .recommend {
+    margin-bottom: 40px;
+  }
+
+  .recommend__col:nth-child(1) {
+    display: none;
+  }
+
+  .recommend-slider-mobile .slick-list {
+    padding-right: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend-slider-mobile .slick-list {
+    padding-right: 10%;
+  }
+
+  .recommend__title_wrap {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .recommend-slider-mobile .slick-list {
+    padding-right: 35%;
+  }
+}

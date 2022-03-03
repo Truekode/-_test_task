@@ -1,0 +1,46 @@
+.course-confirmation {
+    margin-bottom: 100px;
+    min-height: calc(100vh - 241px);
+}
+
+.course-confirmation__revert-small-input .input-container {
+    margin-bottom: 0;
+}
+
+.course-confirmation__revert-small-input .input-container:last-child {
+    margin-left: 18px;
+}
+
+.course-confirmation__title {
+    margin-bottom: 40px;
+}
+
+.course-confirmation__text-p {
+    font-size: 13px;
+    line-height: 15px;
+    color: #030F26;
+    opacity: 0.5;
+    margin-left: 18px;
+}
+
+.course-confirmation__button {
+    margin-top: 0;
+}
+
+@media (max-width: 575px) {
+    .course-confirmation__revert-small-input .input-container {
+        margin-bottom: 18px;
+    }
+    
+    .course-confirmation__revert-small-input .input-container:last-child {
+        margin-left: 0;
+    }
+
+    .course-confirmation__text-p {
+        margin-left: 0;
+    }
+
+    .course-confirmation {
+        margin-bottom: 34px;
+    }
+}

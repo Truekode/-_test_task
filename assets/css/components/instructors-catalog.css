@@ -1,0 +1,47 @@
+.instructors-catalog {
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+.instructors-catalo__title {
+    max-width: none;
+    margin-bottom: 0;
+}
+
+.instructors-catalog__section-name {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+}
+
+.instructors-catalog__head-container {
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+.instructors-catalog__icon-arrow {
+    width: 92px;
+    height: 96px;
+    fill: var(--color-white);
+    transform: scale(-1, -1);
+}
+
+@media (max-width: 1200px) {
+    .instructors-catalog__icon-arrow {
+        display: none;
+    }
+
+    .instructors-catalog__head-container {
+        margin-bottom: 32px;
+    }
+
+    .instructors-catalog {
+
+    }
+}
+
+@media (max-width: 7670px) {
+    .instructors-catalog {
+        margin-bottom: 40px;
+    }
+}

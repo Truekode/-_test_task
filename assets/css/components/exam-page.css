@@ -1,0 +1,11 @@
+.exam-page__steps-body {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+    .exam-page__steps-body {
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+}

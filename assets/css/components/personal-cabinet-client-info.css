@@ -1,0 +1,207 @@
+.personal-cabinet__client {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 277px;
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-left: 20px;
+    background-color: #fff;
+    background-color: var(--color-white);
+}
+
+.personal-cabinet__client::before {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    content: "";
+}
+
+.personal-cabinet__client-logo {
+    position: relative;
+    width: 135px;
+    height: 135px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 69px;
+}
+
+.personal-cabinet__client-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+.personal-cabinet__client-logo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.personal-cabinet__client-name {
+    margin-bottom: 8px;
+    color: #030f26;
+    color: var(--color-dark);
+    font-weight: 500;
+    font-size: 1.33333rem;
+    line-height: 25px;
+}
+
+.personal-cabinet__change-info {
+    display: inline-block;
+    color: #10bfeb;
+    color: var(--color-blue-light);
+    font-size: .86667rem;
+    line-height: 15px;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+}
+
+.personal-cabinet__client-info ._wrap {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(3, 15, 38, .1);
+}
+
+.personal-cabinet__legend {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .86667rem;
+    line-height: 13px;
+}
+
+.personal-cabinet__e-mail {
+    display: block;
+    margin-bottom: 30px;
+    color: #10bfeb;
+    color: var(--color-blue-light);
+    font-size: 1rem;
+    line-height: 15px;
+}
+
+.personal-cabinet__tel {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 15px;
+}
+
+.personal-cabinet__exit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: auto;
+    font-size: .93333rem;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.personal-cabinet__exit-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    pointer-events: none;
+    transition: fill 0.2s ease-in;
+}
+
+@media (min-width: 1024px) {
+    .personal-cabinet__exit:hover .personal-cabinet__exit-icon {
+        fill: #10bfeb;
+        fill: var(--color-blue-light);
+    }
+
+    .personal-cabinet__exit:focus .personal-cabinet__exit-icon {
+        fill: #10bfeb;
+        fill: var(--color-blue-light);
+    }
+
+    .personal-cabinet__change-info:focus {
+        color: #de525c;
+        color: var(--color-orange);
+    }
+}
+
+@media (max-width:1536px) {
+    .personal-cabinet__client {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .personal-cabinet__client {
+        width: 247px;
+        padding-right: 20px;
+    }
+
+    .personal-cabinet__client-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .personal-cabinet__client-name {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .personal-cabinet__client-info ._wrap {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .personal-cabinet__client {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 29px;
+    }
+
+    .personal-cabinet__client-logo {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-right: 10px;
+        transform: translateY(-10px);
+    }
+
+    .personal-cabinet__client-name {
+        margin-bottom: 5px;
+    }
+
+    .personal-cabinet__client-info ._wrap {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .personal-cabinet__exit {
+        margin-top: 30px;
+    }
+
+    .personal-cabinet__e-mail {
+        margin-bottom: 11px;
+    }
+}

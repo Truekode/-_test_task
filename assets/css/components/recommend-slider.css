@@ -1,0 +1,21 @@
+.recommend-slider__nav {
+    width: 119.43px;
+    height: 44px;
+}
+
+.recommend-slider__nav .slider-arrow {
+    width: 51px;
+    height: 44px;
+    fill: #030f26;
+}
+
+@media (max-width: 1280px) {
+    .recommend-slider__nav {
+      width: 100px;
+    }
+  
+    .recommend-slider__nav .slider-arrow {
+      width: 41px;
+      height: 34px;
+    }
+  }

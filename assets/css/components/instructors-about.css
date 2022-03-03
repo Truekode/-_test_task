@@ -1,0 +1,109 @@
+.instructors-about {
+    margin-bottom: 60px;
+}
+
+.instructors-about__title {
+    margin-bottom: 60px;
+    max-width: 510px;
+}
+
+.instructors-about__list {
+    width: 100%;
+    counter-reset: section;
+}
+
+.instructors-about__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    row-gap: 0;
+    padding: 20px 0;
+    border-top: 1px solid rgba(3, 15, 38, 0.2);
+}
+
+.instructors-about__item::before {
+    position: absolute;
+    top: 20px;
+    left: -50%;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-blue-light);
+    counter-increment: section;
+    content: "0" counters(section, "1")
+}
+
+.instructors-about__legend {
+    grid-column: 4 span;
+    display: block;
+    max-width: 260px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+}
+
+.instructors-about__item p {
+    max-width: 380px;
+    margin: 0;
+    grid-column: 4 span;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.instructors-about__item:last-child {
+    border-bottom: 1px solid rgba(3, 15, 38, 0.2);
+}
+
+@media (max-width: 1366px) {
+    .instructors-about__title {
+        max-width: 440px;
+    }
+
+    .instructors-about__legend {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .instructors-about__title {
+        max-width: 440px;
+        margin-bottom: 40px;
+    }
+
+    .instructors-about .section-name {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .instructors-about__legend {
+        grid-column: 8 span;
+        padding-top: 20px;
+        border-top: 1px solid rgba(3, 15, 38, 0.2);
+        max-width: none;
+        margin-bottom: 12px;
+        line-height: 28px;
+    }
+    
+    .instructors-about__item p {
+        grid-column: 8 span;
+        max-width: none;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .instructors-about__item {
+        row-gap: 0;
+        padding-top: 0;
+        border-top: none;
+    }
+
+    .instructors-about__item::before {
+        position: static;
+        top: auto;
+        left: auto;
+        margin-bottom: 20px;
+    }
+}

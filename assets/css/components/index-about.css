@@ -1,0 +1,38 @@
+.about {
+  margin-bottom: 52px;
+}
+
+.about__title {
+  max-width: 1110px;
+  margin-bottom: 36px;
+}
+
+.about__title span {
+  color: #10bfeb;
+  text-transform: uppercase;
+}
+
+.about__section-name {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 1200px) {
+  .about__title {
+    margin-bottom: 24px;
+  }
+  
+  .about {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about__section-name {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,151 @@
+.retake-procedure {
+    padding: 60px 0;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+.retake-procedure .section-name {
+    margin-bottom: 11px;
+    color: var(--color-white);
+}
+
+.retake-procedure__title {
+    text-transform: uppercase;
+    max-width: 720px;
+    margin-bottom: 60px;
+    color: var(--color-white);
+}
+
+.retake-procedure__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    counter-reset: section;
+}
+
+.retake-procedure__list::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-white);
+    content: "";
+}
+
+.retake-procedure__item {
+    counter-increment: section;
+    position: relative;
+    grid-column: 3 span;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.retake-procedure__item::before {
+    content: counters(section, "");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border: 1px solid #fff;
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+.retake-procedure__item-heading {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 350px;
+}
+
+.retake-procedure__item ul li {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 11px;
+    margin-bottom: 8px;
+}
+
+.retake-procedure__item ul li:last-child {
+    margin-bottom: 0;
+}
+
+.retake-procedure__item ul li::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+@media (max-width: 992px) {
+    .retake-procedure__item {
+        grid-column: 12 span;
+        flex-direction: row;
+        align-items: stretch;
+        margin-bottom: 40px;
+    }
+
+    .retake-procedure__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .retake-procedure__item::before {
+        margin-right: 32px;
+        border-width: 2px;
+    }
+
+    .retake-procedure__list::before {
+        height: 88.3%;
+        width: 2px;
+        left: -1px;
+    }
+}
+
+@media (max-width: 767px) {
+    .retake-procedure {
+        padding: 40px 0;
+    }
+
+    .retake-procedure__title {
+        margin-bottom: 32px;
+    }
+
+    .retake-procedure__item::before {
+        width: 54px;
+        height: 54px;
+        flex-shrink: 0;
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 0;
+        margin-right: 19px;
+    }
+
+    .retake-procedure__item-heading {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .retake-procedure__item ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .retake-procedure__list::before {
+        height: 90%;
+    }
+}

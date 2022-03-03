@@ -1,0 +1,115 @@
+.store-nav {
+    height: 92px;
+}
+
+.store-nav__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.store-nav__catalog {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 12px 57px 12px 20px;
+    background: linear-gradient(90deg, #DE525C 0%, #E97251 100%);
+    border-radius: 30px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.store-nav__catalog:before {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    content: '';
+    width: 12px;
+    height: 5px;
+    background-image: url("../../img/online-store/burger.svg");
+}
+
+.store-nav__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap: 20px;
+}
+
+.store-nav__navigation__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #373E4A;
+}
+
+.store-nav__wrp {
+    display: flex;
+}
+
+.store-nav__cart {
+    position: relative;
+    margin-right: 35px;
+    display: block;
+    background: url("../../img/online-store/cart.svg") no-repeat;
+    background-size: contain;
+    width: 27px;
+    height: 27px;
+}
+
+.store-nav__cart:before {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    content: '2';
+    background: linear-gradient(90deg, #DE525C 0%, #E97251 100%);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    top: -9px;
+    right: -9px;
+}
+
+.store-nav__like {
+    display: block;
+    background: url("../../img/online-store/like.svg") no-repeat;
+    background-size: contain;
+    width: 27px;
+    height: 27px;
+}
+
+.store-nav__navigation__link:nth-child(1) {
+    position: relative;
+}
+
+.store-nav__navigation__link:nth-child(1):before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -21px;
+    background: url("../../img/online-store/discount.svg") no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 15px;
+}
+
+@media (max-width: 1200px) {
+    .store-nav__navigation {
+        display: none;
+    }
+}

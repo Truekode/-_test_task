@@ -1,0 +1,233 @@
+.retake-rules {
+    margin-bottom: 60px;
+}
+
+.retake-rules .section-name {
+    margin-bottom: 11px;
+}
+
+.retake-rules__title {
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.retake-rules__list {
+    width: 100%;
+    counter-reset: section;
+}
+
+.retake-rules__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+    background-color: #F7FAFB;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.retake-rules__item::before {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-blue-light);
+    counter-increment: section;
+    content: "0" counters(section, "")
+}
+
+.retake-rules__item:last-child .retake-rules__item-content {
+    grid-column: 5 span;
+}
+
+.retake-rules__item:last-child .retake-rules__item-heading {
+    grid-column: 3 span;
+}
+
+.retake-rules__item-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 450px;
+    grid-column: 4 span;
+}
+
+.retake-rules__item-content {
+    grid-column: 4 span;
+}
+
+.retake-rules__item-content p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.retake-rules__item-content p:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+.retake-rules__item-content ul {
+    counter-reset: none;
+}
+
+.retake-rules__item-content ul li {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+.retake-rules__item-content ul li::before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--color-dark);
+    content: "";
+}
+
+.retake-rules__item-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+.retake-rules__item-content span {
+    display: block;
+    padding-top: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(3, 15, 38, 0.5);
+}
+
+.retake-rules__item-price {
+    padding: 24px;
+    color: var(--color-white);
+    background: linear-gradient(291.54deg, #8664CF -12.62%, #473ACB 108.48%);
+}
+
+.retake-rules__item-price ._top {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--color-white);
+}
+
+.retake-rules__item-price-heading {
+    grid-column: 3 span;
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-white);
+}
+
+.retake-rules__item-price-price {
+    grid-column: 5 span;
+    display: block;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1; 
+}
+
+.retake-rules__item-price-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-white);
+    width: 100%;
+    transition: color var(--main-transition);
+}
+
+.retake-rules__item-price-btn:hover {
+    color: var(--color-blue-light);
+}
+
+.retake-rules__item-price-info._is-open .retake-rules__item-price-info-arrow {
+    transform: rotate(180deg);
+}
+
+.retake-rules__item-price-btn:hover .retake-rules__item-price-info-arrow {
+    fill: var(--color-blue-light);
+}
+
+.retake-rules__item-price-info-arrow {
+    fill: var(--color-white);
+    transition: fill var(--main-transition);
+    transition: transform var(--main-transition);
+}
+
+.retake-rules__item-price-info-content ul {
+    margin: 16px 0;
+}
+
+.retake-rules__item-price-info-content ul li {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+.retake-rules__item-price-info-content ul li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .retake-rules__item-heading, 
+    .retake-rules__item-content {
+        grid-column: 8 span !important;
+    }
+
+    .retake-rules__item-heading {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .retake-rules__title {
+        margin-bottom: 74px;
+    }
+
+    .retake-rules__item::before {
+        top: -40px;
+        left: 0;
+    }
+
+    .retake-rules__item {
+        padding: 20px;
+        margin-bottom: 82px;
+    }
+
+    .retake-rules__item:last-child {
+        margin-bottom: 32px;
+    }
+
+    .retake-rules__item-price-heading,
+    .retake-rules__item-price-price {
+        grid-column: 8 span;
+    }
+
+    .retake-rules__item-price-heading {
+        margin-bottom: 24px;
+    }
+
+    .retake-rules__item-price-price {
+        font-size: 24px;
+    }
+}

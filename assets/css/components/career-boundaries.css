@@ -1,0 +1,133 @@
+.career-boundaries {
+    padding: 60px 0;
+    margin-bottom: 60px;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+.career-boundaries__title {
+    color: var(--color-white);
+    max-width: 843px;
+    margin-bottom: 60px;
+}
+
+.career-boundaries__title span {
+    color: var(--color-blue-light);
+}
+
+.career-boundaries__list {
+    margin-bottom: 48px;
+}
+
+.career-boundaries__item {
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.career-boundaries__item:first-child {
+    padding-top: 0;
+}
+
+.career-boundaries__item-icon {
+    display: block;
+    margin-bottom: 24px;
+    fill: var(--color-white);
+}
+
+.career-boundaries__item p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+    max-width: 671px;
+}
+
+.career-boundaries__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.career-boundaries__link span {
+    display: block;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 46px;
+    background: var(--gradient-color-orange);
+    background: -o-linear-gradient(90deg, #DE525C 0%, #E97251 100%);
+    background: linear-gradient(90deg, #DE525C 0%, #E97251 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+
+}
+
+.career-boundaries__link:hover span {
+    background: none;
+    -webkit-text-fill-color: var(--color-blue-light);
+}
+
+.career-boundaries__link:hover .career-boundaries__link-icon ._icon-color {
+    stop-color: var(--color-blue-light);
+}
+
+
+@media (max-width: 1366px) {
+    .career-boundaries__title {
+        max-width: 713px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .career-boundaries__title {
+        margin-bottom: 40px;
+    }
+
+    .career-boundaries__link span {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .career-boundaries__link-icon {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .career-boundaries__title {
+        margin-bottom: 32px;
+    }
+
+    .career-boundaries {
+        margin-bottom: 40px;
+    }
+
+    .career-boundaries__link span {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .career-boundaries__link-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .career-boundaries__item {
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+
+    .career-boundaries__item p {
+        font-size: 16px;
+        ine-height: 24px;
+    }
+
+    .career-boundaries__list {
+        margin-bottom: 20px;
+    }
+
+    .career-boundaries {
+        padding: 40px 0;
+    }
+}

@@ -1,0 +1,84 @@
+.course-registration {
+    min-height: calc(100vh - 141px);
+}
+
+.course-registration__container {
+    margin-bottom: 41px;
+}
+
+.course-registration__title {
+    max-width: 1080px;
+    margin-bottom: 8px;
+}
+
+.course-registration__link {
+    display: inline-block;
+    margin-bottom: 41px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+}
+
+.course-registration__flex-container {
+    position: relative;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+.course-registration__col:nth-of-type(1) {
+    width: calc(100% - 554px);
+    margin-right: 20px;
+}
+
+.course-registration__col:nth-of-type(2) {
+    width: 391px;
+    position: sticky;
+    top: 110px;
+    left: 0;
+}
+
+.course-registration__pay-wraning {
+    display: flex;
+    align-items: flex-start;
+    max-width: 354px;
+    margin: 0;
+    margin-top: 23px;
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--color-dark-secondary);
+}
+
+.course-registration__icon-warn {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    fill: var(--color-dark-secondary);
+}
+
+@media (max-width: 1200px) {
+    .course-registration__flex-container {
+        flex-direction: column;
+    }
+
+    .course-registration__col:nth-child(1) {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .course-registration__col:nth-child(2) {
+        width: 100%;
+    }
+
+    .course-registration__col:nth-of-type(2) {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .course-registration__title {
+        margin-bottom: 15px;
+    }
+}

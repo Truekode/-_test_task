@@ -1,0 +1,128 @@
+
+.empty-dates {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 11px 18px 16px 14px;
+    border: 1px solid #030f26;
+}
+
+.icon-search-desabled {
+    margin-right: 27px;
+    width: 68px;
+    height: 67px;
+    fill: #030f26;
+    opacity: 0.14;
+}
+
+.empty-dates__heading {
+    max-width: 488px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.empty-dates ._wrap {
+    margin-left: auto;
+    max-width: 239px;
+}
+
+.empty-dates__offer {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.empty-dates__legend {
+    font-weight: 500;
+    font-size: 1.66666666667rem;
+    line-height: 30px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.empty-dates__link {
+    font-size: 1.1rem;
+    transition: color var(--main-transition);
+}
+
+.empty-dates__link:hover {
+    background: none;
+    -webkit-text-fill-color: var(--color-blue-light);
+}
+
+.empty-dates__link:hover .empty-dates__link-icon {
+    fill: var(--color-blue-light);
+    stroke: var(--color-blue-light);
+}
+
+.empty-dates__link-icon {
+    fill: var(--color-orange);
+    stroke: var(--color-orange);
+    margin-left: 4px;
+}
+
+
+@media (max-width: 1366px) {
+    .icon-search-desabled {
+        width: 58px;
+        height: 58px;
+        margin-right: 16px;
+    }
+
+    .empty-dates__heading {
+        max-width: 448px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .empty-dates {
+        margin-bottom: 40px;
+    }
+
+    .empty-dates__legend {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .empty-dates {
+        flex-wrap: wrap;
+    }
+
+    .empty-dates ._wrap {
+        margin-left: 0;
+        max-width: none;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .icon-search-desabled {
+        display: none;
+    }
+
+    .empty-dates {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    .empty-dates__heading {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .empty-dates ._wrap {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .empty-dates__link {
+        font-size: 15px;
+    }
+}

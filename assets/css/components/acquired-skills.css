@@ -1,0 +1,56 @@
+.acquired-skills {
+    margin-bottom: 76px;
+}
+
+.acquired-skills .feautures-list__heading {
+    font-size: 20px;
+}
+
+.acquired-skills .feautures-list__item {
+    padding-top: 32px;
+}
+
+.acquired-skills__section-name {
+   margin-bottom: 14px;
+}
+
+.acquired-skills__title {
+    max-width: 720px;
+    margin-bottom: 58px;
+    line-height: 59px;
+}
+
+.acquired-skills .accreditation__item {
+    min-height: 155px;
+}
+
+@media (max-width: 1366px) {
+    .acquired-skills__title {
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .acquired-skills {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .acquired-skills__section-name {
+        margin-bottom: 8px;
+    }
+
+    .acquired-skills__title {
+        line-height: 44px;
+        margin-bottom: 40px;
+    }
+
+    .acquired-skills .feautures-list__item {
+        padding: 24px 0 32px;
+    }
+
+    .acquired-skills {
+        margin-bottom: 28px;
+    }
+}

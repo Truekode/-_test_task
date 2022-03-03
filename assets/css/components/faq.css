@@ -1,0 +1,28 @@
+.faq {
+    margin-bottom: 100px;
+}
+
+.faq .main-grid-content__block:nth-of-type(2) {
+    transform: translateY(10px);
+}
+
+.faq__title {
+    margin-bottom: 26px;
+    line-height: 59px;
+}
+
+@media (max-width: 1366px) {
+    .faq__title {
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .faq__title {
+        line-height: 48px;
+    }
+
+    .faq__page-link {
+        margin-bottom: 24px;
+    }
+}

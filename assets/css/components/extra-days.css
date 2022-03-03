@@ -1,0 +1,150 @@
+.extra-days {
+    padding: 60px 0;
+    color: var(--color-dark);
+}
+
+.extra-days .section-name {
+    margin-bottom: 11px;
+}
+
+.extra-days__title {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.extra-days__content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 350px;
+}
+
+.extra-days__table {
+    background-color: #F7FAFB;
+    padding: 24px;
+}
+
+.extra-days__table-head {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(3, 15, 38, 0.2);
+}
+
+.extra-days__td:nth-child(1) {
+    width: 450px;
+    margin-right: 143px;
+}
+
+.extra-days__td:nth-child(2) {
+    width: 100px;
+    margin-right: 60px;
+}
+
+.extra-days__td:nth-child(3) { 
+    width: 100px;
+}
+
+.extra-days__td {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.extra-days__table-head-td {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(3, 15, 38, 0.5);
+}
+
+.extra-days__tr {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(3, 15, 38, 0.2);
+}
+
+.extra-days__tr ._mobile {
+    display: none;
+}
+
+.extra-days__tr:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.extra-day__money-info {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+   color: rgba(3, 15, 38, 0.5);
+   text-align: right;
+   margin-top: 24px;
+}
+
+@media (max-width: 1200px) {
+    .extra-days__title {
+        margin-bottom: 12px;
+    }
+
+    .extra-days__table {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    .extra-days__table {
+        padding: 20px;
+    }
+
+    .extra-days__table-head {
+        display: none;
+    }
+
+    .extra-days__tr {
+        flex-wrap: wrap;
+    }
+
+    .extra-days__td:nth-child(1) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .extra-days__td:nth-child(2) {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .extra-days__td:nth-child(3) {
+        width: 50%;
+    }
+
+    .extra-days__tr ._mobile {
+        display: inline;
+    }
+}
+
+@media (max-width: 767px) {
+    .extra-days {
+        padding: 40px 0;
+    }
+
+    .extra-days__content p {
+        max-width: 100%;
+    }
+
+    .extra-days__td {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .extra-days__tr:nth-child(1) {
+        padding-top: 0;
+    }
+
+    .extra-day__money-info {
+        text-align: left;
+    }
+}

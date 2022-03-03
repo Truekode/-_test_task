@@ -1,0 +1,96 @@
+.kind-of-sports__hero {
+    margin-bottom: 120px;
+}
+
+.kind-of-sports__title {
+    margin-bottom: 60px;
+    max-width: 712px;
+}
+
+.kind-of-sports__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.kind-of-sports__button {
+    display: inline-block;
+    padding: 23px 50px;
+    width: auto;
+}
+
+.kind-of-sports__hero-img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+@media (max-width: 1366px) {
+    .kind-of-sports__text {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kind-of-sports__hero .main-grid-content__block:nth-of-type(2) {
+        order: 1;
+    }
+
+    .kind-of-sports__hero .main-grid-content__block:nth-of-type(1) {
+        order: 2;
+    }
+
+    .kind-of-sports__title {
+        margin-bottom: 40px;
+    }
+
+    .kind-of-sports__hero {
+        margin-bottom: 60px;
+    }
+
+    .kind-of-sports__text {
+        margin-bottom: 32px;
+    }
+
+    .kind-of-sports__hero-img {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .kind-of-sports__title {
+        margin-bottom: 24px;
+    }
+
+    .kind-of-sports__title br {
+        display: none;
+    }
+
+    .kind-of-sports__hero {
+        padding-top: 32px;
+    }
+
+    .kind-of-sports__text {
+        margin-bottom: 24px;
+        line-height: 28px;
+    }
+
+    .kind-of-sports__hero-img {
+        height: 200px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+    .kind-of-sports__title {
+        font-size: 28px;
+        line-height: 35px;
+    }    
+}

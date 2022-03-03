@@ -1,0 +1,88 @@
+.payment__label {
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid rgba(3, 15, 38, 0.1);
+}
+
+.payment__label:last-child {
+    border-bottom: 1px solid rgba(3, 15, 38, 0.1);
+}
+
+.payment__name._round {
+    padding-left: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.payment__name._round::before {
+    top: 21px;
+    width: 22px;
+    height: 22px;
+    transform: translateY(0);
+}
+
+.payment__name._round::after {
+    top: 32px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.payment__name-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    color: var(--color-dark-secondary);
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.paymen__visa {
+    width: 30px;
+    height: 10px;
+    margin-right: 12px;
+}
+
+.paymen__mc {
+    width: 21px;
+    height: 16px;
+}
+
+.payment__kvit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 17px;
+    border: 1px dashed var(--color-blue-light);
+}
+
+.payment__kvit-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.payment__kvit-size {
+    font-size: 15px;
+    line-height: 15px;
+    color: #C8CFD4;
+}
+
+.payment__icon-dwnld {
+    width: 38px;
+    height: 28px;
+    fill: var(--color-blue-light);
+}
+
+.modal__text._payment {
+    margin-bottom: 30px;
+}

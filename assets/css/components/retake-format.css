@@ -1,0 +1,226 @@
+.retake-format {
+    margin-bottom: 60px;
+}
+
+.retake-format__title {
+    max-width: 720px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.retake-format__dwnld-link {
+    display: inline-block;
+    max-width: 326px;
+}
+
+.retake-format__dwnld-link:hover .retake-format__dwnld-link-heading,
+.retake-format__dwnld-link:hover .retake-format__dwnld-link-dwnld {
+    color: var(--color-blue-light);
+}
+
+.retake-format__dwnld-link:hover .retake-format__dwnld-link-dwnld-icon .stop {
+    transition: stop-color var(--main-transition);
+}
+
+.retake-format__dwnld-link:hover .retake-format__dwnld-link-dwnld-icon .stop {
+    stop-color: var(--color-blue-light);
+}
+
+.retake-format__dwnld-link-heading {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    transition: color var(--main-transition);
+}
+
+.retake-format__dwnld-link-size {
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+.retake-format__dwnld-link-dwnld {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+    transition: color var(--main-transition);
+}
+
+.retake-format__dwnld-link-dwnld-icon {
+    transform: translateY(2px);
+}
+
+.retake-format__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+    align-items: start;
+}
+
+.retake-format__item {
+    grid-column: 4 span;
+    padding: 24px;
+    background: linear-gradient(318.26deg, #4BD5C4 -30.85%, #2E90C7 105.3%);
+    color: var(--color-white);
+}
+
+.retake-format__item:nth-child(2) {
+    background: linear-gradient(291.54deg, #8664CF -12.62%, #473ACB 108.48%);
+}
+
+.retake-format__item-heading {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.retake-format__item ul {
+    margin-bottom: 20px;
+}
+
+.retake-format__item ul li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 12px;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.retake-format__item ul li::before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-white);
+    content: "";
+}
+
+.retake-format__item ul li:last-child {
+    margin-bottom: 0;
+}
+
+.retake-format__item-content {
+    padding: 20px;
+    border: 1px dashed #fff;
+}
+
+.retake-format__item-content p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.retake-format__item-content p:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+.retake-format__item-content ul li {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.retake-format__item-content ul {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+
+.retake-format__item-content ul li {
+    padding-left: 0;
+    width: 33.3%;
+}
+
+.retake-format__item-content ul li:last-child {
+    margin-right: 0;
+}
+
+.retake-format__item-content ul li::before {
+    content: none;
+}
+
+.retake-format__item-content ul li span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.retake-format__item-content ul li p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .retake-format__dwnld-link {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .retake-format__item {
+        grid-column: 12 span;
+        margin-bottom: 20px;
+    }
+
+    .retake-format__item:last-child {
+        margin-bottom: 0;
+    } 
+
+    .retake-format__title {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .retake-format__title {
+        margin-bottom: 12px;
+    }
+
+    .retake-format__dwnld-link-heading {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .retake-format__item-heading {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .retake-format__item ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .retake-format__item-content p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .retake-format__item-content ul li span {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .retake-format__item-content ul li p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .retake-format {
+        margin-bottom: 40px;
+    }
+}

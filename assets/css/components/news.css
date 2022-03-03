@@ -1,0 +1,37 @@
+.news {
+    margin-bottom: 105px;
+}
+
+.news__title_wrap {
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.news__link {
+    font-size: 1.1rem;
+    letter-spacing: 0.4px;
+}
+
+@media (max-width: 1200px) {
+    .news__title_wrap {
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .news__title {
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    .news__title_wrap {
+        margin-bottom: 26px;
+    }
+
+    .news__title {
+        max-width: 80%;
+    }
+}

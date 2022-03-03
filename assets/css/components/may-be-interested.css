@@ -1,0 +1,122 @@
+.may-be-interested {
+    margin-top: 60px;
+}
+
+.may-be-interested__heading {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--color-dark-secondary);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.3;
+}
+
+.may-be-interested__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.may-be-interested__item {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 48.8%;
+    min-height: 93px;
+    padding: 13px 18px 18px 18px;
+}
+
+.may-be-interested__item:hover .may-be-interested__item-button {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+.may-be-interested__item .icon-designed-arrows {
+    position: absolute;
+    top: 0;
+    right: 65px;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 163px;
+    fill: #C4C4C4;
+    opacity: 0.2;
+}
+
+.may-be-interested__item._green-colored {
+    background: linear-gradient(108.18deg, #AACC63 0%, #3BAD53 100%);
+}
+
+.may-be-interested__item._red-colored {
+    background: linear-gradient(108.18deg, #F74358 0%, #C1293B 100%);
+}
+
+.may-be-interested__item-heading {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.may-be-interested__item-price {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--color-white);
+}
+
+.may-be-interested__item-button {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 37px;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    background-color: var(--color-white);
+    color: var(--color-blue-light);
+    border-radius: 30px;
+    transition: color var(--main-transition), background-color var(--main-transition);
+}
+
+@media (max-width: 767px) {
+    .may-be-interested__heading {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .may-be-interested__items {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    .may-be-interested__item {
+        padding: 13px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .may-be-interested__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .may-be-interested__item-button {
+        bottom: 13px;
+    }
+
+    .may-be-interested__item-price {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}

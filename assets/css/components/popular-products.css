@@ -1,0 +1,118 @@
+.popular-products {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.popular-products__wrp {
+    display: flex;
+}
+
+.popular-products__wrp__title {
+    max-width: 520px;
+}
+
+.popular-products__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.popular-products__item {
+    display: flex;
+    align-items: flex-start;
+    grid-column-gap: 31px;
+    width: 474px;
+    border: 1px solid #C8CFD4;
+    box-sizing: border-box;
+    padding: 49px 25px;
+}
+
+
+
+.popular-products__item__brand {
+    margin-top: 12px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C8CFD4;
+}
+
+.popular-products__item__name {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #030F26;
+}
+
+.popular-products__item__type {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #030F26;
+}
+
+.popular-products__item__price {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #030F26;
+}
+
+.popular-products__item__size-list {
+    margin-top: 16px;
+    display: flex;
+    grid-column-gap: 12px;
+}
+
+.popular-products__item__size-list > li {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #C4C4C4;
+}
+
+.popular-products__item__btn {
+    position: relative;
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:  #DE525C;
+}
+
+.popular-products__item__btn:before {
+    position: absolute;
+    content: '';
+    background: url("../../img/online-store/arrow.svg") no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 11px;
+    top: 3px;
+    left: 72px;
+}
+
+@media (max-width: 767px) {
+    .popular-products__wrp__title {
+        margin-bottom: 30px;
+    }
+
+    .popular-products__wrp {
+        flex-direction: column;
+    }
+
+    .popular-products__item__size-list {
+        flex-wrap: wrap;
+    }
+}

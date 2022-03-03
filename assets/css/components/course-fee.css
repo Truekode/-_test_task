@@ -1,0 +1,58 @@
+.course-fee__table .table__item:nth-child(1) {
+    margin-right: 90px;
+    width: 113px;
+    min-width: 0;
+    max-width: none;
+}
+
+.course-fee__table .table__item:nth-child(2) {
+    width: 465px;
+    margin-right: 209px;
+}
+
+.course-fee__table .table__item:nth-child(3) {
+    width: 210px;
+}
+
+@media screen and (max-width: 1440px) {
+    .course-fee__table .table__item:nth-child(1) {
+        width: 119px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .course-fee__table .table__item:nth-child(1) {
+        width: 169px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .course-fee__table .table__item:nth-child(1) {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .course-fee__table .table__item:nth-child(2) {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .course-fee__table .table__item:nth-child(3) {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .course-fee__table .table__item:nth-child(1) {
+        width: 100%;
+    }
+
+    .course-fee__table .table__item:nth-child(2) {
+        width: 100%;
+    }
+
+    .course-fee__table .table__item:nth-child(3) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,149 @@
+.card {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(50% - 20px);
+  height: 240px;
+  margin: 10px;
+  padding: 18px 26px;
+  background-color: #edf3ff;
+  background-color: var(--color-blue-lighter);
+  transition: background-color var(--main-transition), transform var(--main-transition);
+}
+
+.card__title {
+  max-width: 311px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  transition: color var(--main-transition);
+}
+
+.card .icon-arrows-reccomend {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 231px;
+  height: 142px;
+  fill: #fff;
+  fill: var(--color-white);
+  transition: opacity var(--main-transition);
+}
+
+.card__link-text {
+  position: relative;
+  display: inline-block;
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background: -o-linear-gradient(341.82deg,#f74358 0,#c1293b 100%);
+  background: var(--gradient-color-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card__link-text-icon {
+  display: inline-block;
+  fill: var(--color-orange);
+  stroke: var(--color-orange);
+}
+
+.card__text {
+  position: relative;
+  z-index: 1;
+  max-width: 70%;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  transition: color var(--main-transition);
+}
+
+.card:hover {
+  background-color: var(--color-dark-blue);
+  transform: scale(1.02);
+}
+
+.card:active {
+  background-color: #374C77;
+}
+
+.card:hover .card__link-text {
+  background: none;
+  -webkit-text-fill-color: var(--color-blue-light);
+}
+
+.card:hover .card__text {
+  color: #fff;
+}
+
+.card:hover .card__link-text-icon {
+  fill: var(--color-blue-light);
+  stroke: var(--color-blue-light);
+}
+
+.card:hover .card__title {
+  color: var(--color-white);
+}
+
+.card:hover .icon-arrows-reccomend {
+  opacity: 0;
+}
+
+
+@media (max-width: 1366px) {
+  .card {
+    height: 210px;
+  }
+
+  .card__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 575px) {
+  .card {
+    z-index: 2;
+    height: 116px;
+    padding: 20px 16px;
+  }
+
+  .card::before {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 14px;
+    height: 15px;
+    background-image: url(../../../assets/img/parters-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+  }
+
+  .card .icon-arrows-reccomend {
+    z-index: -1;
+  }
+
+  .card .icon-arrows-reccomend {
+    width: 109px;
+    height: 80px;
+  }
+
+  .card__title {
+    max-width: 122px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .card__link-text {
+    display: none;
+  }
+}

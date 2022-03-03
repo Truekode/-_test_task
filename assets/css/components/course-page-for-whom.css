@@ -1,0 +1,110 @@
+.course-for-whom__section-name {
+    margin-bottom: 17px;
+}
+
+.course-for-whom__title {
+   max-width: 587px;
+   text-transform: uppercase;
+   margin-bottom: 60px;
+   line-height: 59px;
+}
+
+.course-for-whom__list {
+    row-gap: 0;
+    margin-bottom: 60px;
+}
+
+.course-for-whom__list-item {
+    grid-column: 4 span;
+}
+
+.course-for-whom__list-icon {
+    display: block;
+    fill: var(--color-dark);
+    margin-bottom: 20px;
+}
+
+.course-for-whom__list-heading {
+    max-width: 67%;
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.course-for-whom__list-text {
+    display: inline-block;
+    max-width: 80%;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (max-width: 1366px) {
+    .course-for-whom__title {
+        max-width: 337px;
+        line-height: 48px;
+    }
+
+    .course-for-whom__list-heading {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .course-for-whom__list-heading {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .course-for-whom__list-icon {
+        width: 32px;
+        height: 32px
+    }
+}
+
+@media (max-width: 769px) {
+    .course-for-whom__list-item {
+        grid-column: 6 span;
+    }
+
+    .course-for-whom__list {
+        row-gap: 40px;
+    }
+
+    .course-for-whom__title {
+        margin-bottom: 40px;
+    }
+
+    .course-for-whom__list-heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .course-for-whom__list-item {
+        grid-column: 12 span;
+    }
+
+    .course-for-whom__list {
+        row-gap: 32px;
+    }
+
+    .course-for-whom__list-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .course-for-whom__list-heading {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .course-for-whom__title {
+        line-height: 44px;
+        margin-bottom: 32px;
+    }
+}

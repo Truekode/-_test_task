@@ -1,0 +1,186 @@
+.section-map {
+    background-color: #e5e5e5;
+}
+
+.map__container {
+    position: relative;
+    width: 100%;
+    height: 577px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.map__container .site-container2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    z-index: 50;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.section-map__adress_container {
+    width: 394px;
+    padding: 22px 24px;
+    padding-bottom: 36px;
+    background-color: #fff;
+    background-color: var(--color-white);
+    pointer-events: auto;
+}
+
+.section-map__heading {
+    max-width: 214px;
+    margin-bottom: 60px;
+}
+
+.section-map__adress {
+    align-items: flex-start;
+    margin-bottom: 62px;
+}
+
+.section-map__marker {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    fill: #030f26;
+}
+
+.section-map__adress-name {
+    display: block;
+    max-width: 250px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.66666667rem;
+    line-height: 27px;
+}
+
+.section-map__adress-metro {
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 19px;
+}
+
+.section-map__icon-metro {
+    display: block;
+    width: 15px;
+    height: 9px;
+    margin-right: 6px;
+    object-fit: cover;
+}
+
+.section-map__working-hour {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    font-weight: 500;
+    font-size: 1.66666667rem;
+    line-height: 30px;
+}
+
+.section-map__icon-clock {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    fill: #030f26;
+}
+
+.section-map__contac-us {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 1.433333rem;
+    line-height: 24px;
+}
+
+.section-map__contac-us .icon-arrow-small-top {
+    width: 22px;
+    height: 21px;
+    margin-left: 15px;
+}
+
+
+@media (max-width: 1366px) {
+    .section-map__adress-name,
+    .section-map__working-hour {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-map__adress_container {
+        width: 100%;
+    }
+
+    .map__container {
+        height: 517px;
+    }
+
+    .section-map__heading {
+        margin-bottom: 40px;
+    }
+
+    .section-map__adress {
+        margin-bottom: 42px;
+    }
+
+    .section-map__adress-name {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .map__container {
+        height: 371px;
+    }
+
+    .map__container .site-container2 {
+        top: 41px;
+    }
+
+    .section-map__heading {
+        margin-bottom: 47px;
+    }
+
+    .section-map__adress {
+        margin-bottom: 24px;
+    }
+
+    .section-map__adress-name {
+        margin-bottom: 4px;
+    }
+
+    .section-map__icon-metro {
+        margin-right: 3px;
+    }
+    
+    .section-map__adress-metro {
+        font-size: 14px;
+    }
+
+    .section-map__adress-name,
+    .section-map__working-hour {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .section-map__icon-clock {
+        width: 24px;
+        height: 24px;
+    }
+
+    .section-map__marker {
+        margin-right: 13px;
+    }
+
+    .section-map__working-hour {
+        margin-bottom: 0;
+    }
+
+    .section-map__adress_container {
+        padding: 40px 24px;
+    }
+}
